@@ -1,6 +1,6 @@
 local M = {}
 
-function get_selection()
+local function get_selection()
 	local selection_start, selection_end
 	selection_start = vim.api.nvim_buf_get_mark(0, "<")
 	selection_end = vim.api.nvim_buf_get_mark(0, ">")
